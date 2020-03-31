@@ -13,7 +13,7 @@ import (
 )
 
 type (
-	config struct {
+	Config struct {
 		Requirements      string
 		GalaxyFile        string
 		Inventories       []string
@@ -52,7 +52,7 @@ type (
 	}
 
 	AnsiblePlaybook struct {
-		Config config
+		Config Config
 	}
 )
 
