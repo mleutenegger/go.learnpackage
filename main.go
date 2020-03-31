@@ -203,7 +203,7 @@ func main() {
 
 func run(c *cli.Context) error {
 	plugin := simpleinterest.AnsiblePlaybook{
-		Config: config{
+		Config: simpleinterest.Config{
 			GalaxyFile:    c.String("galaxy-file"),
 			Inventories:   c.StringSlice("inventory"),
 			Playbooks:     c.StringSlice("playbook"),
